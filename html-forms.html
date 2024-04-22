@@ -7,9 +7,76 @@
 </head>
 <body>
     <h1>HTML-FORMS</h1>
-    <label for="User Name:"> ritu 
-    <input type="text"></label>
-     
+    <form>
+    <div>
+    <label for="User Name" >UserName:
+    <input type="text" placeholder="name" required></label></div>
+<div>
+    <label for=" User Phone" >Usercontact:
+<input type="tel" placeholder="9874560000" ></label></div>
+<div>
+    <label for="Password"> Password:
+        <input type="password" placeholder="******"> </label>
+</div>
+<div>
+    <label for="checkbox">Are you above 18?<br>
+        <label for="YES"></label> YES
+       <input type="radio"name="18">
+       <label for="NO>"></label>NO
+<input type="radio"name="18">
+    </label>
+</div>
+<div>
+    <label for="checkbox">GENDER:</label>
+    <input type="radio" name="gender" >
+    <label for="male">Male</label>
+    <input type="radio" name="gender" >
+    <label for="female">Female</label>
+</div>
+<div>
+    <label for="usercity">City</label>
+    <select name="City"> 
+        <option value="Mohali">Mohali</option>
+        <option value="UNA">UNA</option>
+        <option value="CHANDIGARH">CHANDIGARH</option>
+        <option value="HAMIRPUR">HAMIRPUR</option>
+    </select>
+</div>
+<div>
+    <label for="Game">Game:</label>
+    <input type="checkbox" name="Game">
+    <label for="candy crush"> candy crush</label>
+    <input type="checkbox" name="Game">
+    <label for="cricket"> cricket</label>
+    <input type="checkbox" name="Game">
+    <label for="ludo"> ludo</label>
+</div>
+    <div>
+        <label for="upload">upload: </label>
+        <input type="file">
+        <button type="submit">upload</button>
+    </div>
+    <div>
+        <label for="address">address: </label>
+    <textarea name="address" cols="30" rows="10"></textarea>
+    </div>
+    <button type="submit"> Register</button>
+    <button type="reset"Reset>Reset</button>
+ </form>   
+ <div>
+    <h2>HTML5 input types</h2>
+    <label for="choose a color:"></label>
+    <input type="date">
+    <label for="date">date: </label>
+   <input type=" datetime">
+   <label for="datetime">datetime: </label><br>
+   <input type="search">
+   <label for="search">search: </label><br>
+   <input type="email" required>
+   <label for="email">email: </label><br>
+   <label for="range">range:</label>
+   <input type="range">
+ </div>
     
     
 </body>
