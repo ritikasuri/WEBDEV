@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title CSS-SPECIFICITY></title>
+    <style>
+        /* h1{
+            color:aliceblue;
+        } */
+        #unique{
+            color:brown;
+        }
+      .red {
+        color: red;
+      }
+      .yellow {
+        color: yellow;
+      }
+      h1{
+            color:aliceblue;
+        }
+      .orange {
+        color: orange !important;
+      }
+      .blue {
+        color: rgba(0, 0, 255, 0.888);
+      }
+      /* h1{
+            color:aliceblue;
+        } */
+       
+    </style>
+  </head>
+  <body>
+    <p><strong>rule1.</strong> order matter if when target by all the classes present in single element<b> for eg:</b> the class which is written at the last of css file. will be applied to the element. tags can also be present in this <h2> order= !important>inline> ID>CLASS&ATTRIBUTE SELECTOR>TAGS>UNIVERSAL</h2></p>
+    <H2>SPECIFICITY CALCULATION</H2>
+    <UL><h3>
+        <LI> UNIVERSAL SELECTOR= 0</LI>
+        <li>  tag value for.eg&lt;h1&gt;,&lt;p&gt; = 1</li>
+        <LI> element selector and pseudo-element= 0</LI>
+        <LI> class selector, attribute, and pseudo-classes=10</LI>
+        <LI>id selector=100</LI>
+        <LI> inline style=1000</LI>
+        </h3>
+    </UL>
+    <div>
+      <h1 id="unique" class="yellow red blue orange" style="color:blueviolet" > this is color name</h1>
+    </div>
+  </body>
+</html>
