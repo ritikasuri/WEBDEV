@@ -12,18 +12,25 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 5px solid black;
+    border: 2px solid black;
     height:140px;
+    border-radius:4px;
+    background-color: rgb(76, 72, 73);
+    
 }
  div li{
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items:center;
-    border: 3px solid brown;
+    border: 2px solid rgb(22, 4, 4);
     margin: 4px;
     padding: 5px;
     display: flex;
+    border-radius: 6px;
+    background-color: rgb(189, 183, 194);
+   color: rgb(90, 113, 134);
+   cursor: pointer;
 }
 .menu{
     display: flex;
@@ -37,29 +44,53 @@ nav{
 }
 body{
     font-family: "Jersey 15", sans-serif;
-    background-color: cadetblue;
+    background-color: rgb(163, 222, 224);
+}
+.firstsection{
+    display: flex;
+    justify-content: space-between;
+    
+}
+ .LEFT{
+    border: 2px solid black;
+   height:300PX;
+   width: 700px;
+   background-color: rgb(234, 230, 225);
+   border-radius: 6px;
+   overflow: auto;
 }
 
-
-    </style>
+ </style> 
 </head>
-
 <body>
     <header>
-        <nav>
-              
+        <nav>     
             <div CLASS="title">
-              <div class="img2" > <img src="\images\dev image.png" alt="" height="65px;"width="75px;"> CSS Nav Bar</div>
+              <div class="img2" ><img src="icons8-css-48.png" alt=""height="65px;"width="75px;">CSS NAV BAR</div>
       </div>
             <div class="menu">
-                
-                <li>HOME</li>
-                <li>ABOUT</li>
-                <li>CONTACT</li>
-                <li>COURSES</li>
-                <li>PROJECT</li> 
+                <li><a href="https://www.w3schools.com/w3css/w3css_round.asp">HOME</a></li>
+                <li><a href="https://www.w3schools.com/w3css/w3css_icons.asp">CONTACT</a></li>
+                <li><a href="https://www.w3schools.com/w3css/w3css_round.asp">ABOUT</a></li>
+                <li><a href="https://www.w3schools.com/w3css/w3css_display.asp">PROJECT</a></li> 
+                <li><a href="https://www.w3schools.com/w3css/w3css_animate.asp">COURSES</a></li>
             </div>
         </nav>
     </header>
-</body>
+     <main>
+        <section class="firstsection">  
+            
+            <div class="LEFT">
+                <H2>INTRODUCTION TO NAVIGATION BAR
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis iure magni vitae optio aliquam, delectus, architecto eos inventore porro nam beatae quae ad? Eligendi facilis sunt consequatur magnam nesciunt, deleniti ipsum quibusdam molestiae excepturi id, veritatis debitis repellat nam omnis. Dolorem animi necessitatibus praesentium asperiores, exercitationem eaque repellendus similique reiciendis nihil voluptatibus odio sint non illum architecto tempore earum quae fugit laborum consequuntur? Officiis accusantium repudiandae quae quaerat tempora illum atque dolor beatae! Tempore ipsa quidem, quibusdam vel pariatur porro aperiam nostrum expedita velit molestiae! Neque, quae perspiciatis minus vel illo provident voluptatibus, porro modi voluptatem praesentium, culpa ipsum ex.</p>
+                </H2>
+             </div>
+
+            <div class="RIGHTSECTON">
+                <img src="th.jpeg" height="350px" width="350px">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias ut magnam quod quae minima reprehenderit cumque fuga dolorum modi distinctio deleniti enim accusantium at inventore in, eius exercitationem fugit reiciendis perferendis tenetur rem iure tempore. Quisquam, amet eligendi, voluptates vero laborum dolore suscipit delectus qui quasi nobis, rerum in sunt!</p>
+            </div>
+        </section>
+     </main>
+    </body>
 </html>

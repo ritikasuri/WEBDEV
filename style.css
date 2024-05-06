@@ -1,0 +1,19 @@
+h1{
+    color: blue;
+}
+.Outline{
+    height: 100px;
+    width: 100px;
+    border: 5px solid greenyellow;
+    margin: auto;
+outline: 5px solid rgba(255, 0, 47, 0.325);
+ outline-offset: 10px; 
+ background-color: black;
+
+}
+.coloring{
+    height:150px;
+ width: 150px;
+     background-color: blueviolet;
+     border: 5px solid black;
+}
