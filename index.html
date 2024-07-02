@@ -4,21 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Float Property</title>
-
+    <title>Developer-PortFolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <style>
-       * {
+        * {
             margin: 0px;
             padding: 0px;
         }
+
         body {
-            background-color: rgb(64, 156, 141);
-            color: rgb(188, 139, 139);
+            background-color: rgb(4, 39, 33);
+            color: white;
             font-family: 'Poppins', sans-serif;
         }
 
@@ -27,7 +27,7 @@
             justify-content: space-around;
             align-items: center;
             height: 70px;
-            background-color: rgba(167, 235, 202, 0.947);
+            background-color: rgba(45, 98, 73, 0.947);
         }
 
         nav ul {
@@ -37,66 +37,99 @@
 
         }
 
-        nav li {
+        nav li  {
             list-style: none;
             margin: 20px;
+            
+        }
+        nav ul li>a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li>a:hover{
+            color: rgb(160, 227, 53);
+            font-size: 1.05rem;
         }
 
         .left {
-            font-size: 1.3rem;
-        }
-        body {
-            background-color: rgb(236, 244, 191);
-            color: rgb(39, 34, 34);
-            font-family: 'Poppins', sans-serif;
+            font-size: 1.5rem;
         }
 
-        /*CSS for the iframe page*/
-        iframe {
-            height: 600px;
-            width: 80%;
-            border: 5px solid rgb(78, 87, 78);
-        }
-
-        frame {
+        .firstSection {
             display: flex;
-            justify-content: center;
+            /* justify-content: center; */
             align-items: center;
+            margin-left:150px;
+           
 
         }
 
-        /* CSS for Sidebar */
-        div ul li,
-        a {
-            list-style: none;
-            margin: 5px;
-            text-decoration: none;
-            color: rgb(68, 50, 27);
+         .firstSection  >div {
+            width: 50%;
         }
 
-        .SideBar {
-            border: 5px solid rgba(86, 114, 158, 0.335);
-            width: 150px;
-            height: 500px;
-            float: left;
-            margin-right: 10px;
+        .leftSection {
+            /* background-color:a; */
+            /* margin: 50px; */
+            font-size: 2rem;
+            
+
+        }
+
+        .rightSection img {
+            width: 70%;
+             /* margin: 30px 50px; */
+            height: 70%;
+
+        } 
+
+        .rightSection div {
+            margin: 10px 0 10px 80px;
+
+        } 
+        .myName :hover{
+            color: rgb(13, 172, 127);
+            
+        }
+        main hr{
+            background-color: rgba(32, 159, 198, 0.605);
+            height: 0.5px;
+            margin: 35px 100px;
+            border: 0px;
+            
+        }
+        .SecondSection{
+            width: 80vw;
+            margin:  auto;
+        }
+        .SecondSection h1{
+           font-size: 1.6rem;
+        }
+        .greyText{
+            color: grey;
+            font-size: 0.8rem;
+            margin-left: 5px;
+        }
+        .horizontalBar{
+            background: aliceblue;
+            width:80vw;
+            height: 2px;
+            margin: auto;
             display: flex;
-            justify-content: left;
+            justify-content: space-around;
 
         }
-    </style>
 
+        .verticalbar{
+            background-color: white;
+            height: 60px;
+            width: 2px;
+        }
+
+    </style>
 </head>
 
 <body>
-    <!-- <div class="BOX">
-        <img src="/images/html-element.png" alt="">
-        <div>CSS TUTORIAL</div>
-        <div class="box">Home</div>
-        <div class="box">About</div>
-        <div class="box box3">Contact</div>
-    </div> -->
-
     <header>
         <nav>
             <div class="left">
@@ -104,40 +137,67 @@
             </div>
             <div class="right">
                 <ul>
-                    <li>Home</li>
-                    <li>Courses</li>
-                    <li>Projects</li>
-                    <li>Experiences</li>
-                    <li>Contact Me</li>
-                    <li>About</li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">Courses</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Experiences</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                    <li><a href="/">About</a></li>
                 </ul>
             </div>
         </nav>
     </header>
+<main>
+    <section class="firstSection">
+        <div class="leftSection">
+            Hi, I am  <span class="myName">RITIKA</span>
+            <div> I am  a </div>
+            <span id="element"></span>
+        </div>
+        <div class="rightSection">
+            <img src="developer.png" alt="Developer image">
+            <div>Life Starts at the End of your comfort zone</div>
+        </div>
+    </section>
+    
+    <hr>
+
+    <section class="SecondSection">
+        <span class="greyText">What I have done so far</span>
+        <h1>Work Experiences</h1>
+        <div class="horizontalBar">
+            <div class="verticalbar"></div>
+            <div class="verticalbar"></div>
+            <div class="verticalbar"></div>
+            <div class="verticalbar"></div>
+        </div>
+       
+    </section>
+</main>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer','CRICKTER', 'ALL SOFT SOLUTION', 'STUDENT',''],
+      typeSpeed: 45,
+      loop:true
+    });
+  </script>
 
 
-    <div class="SideBar">
-        <ul>
-            <li><a href="html-101.html" target="myFrame">CSS intro</a></li>
-            <li><a href="html-102.html" target="myFrame">CSS intro</a></li>
-            <li><a href="CSS-boxModel.html" target="myFrame">CSS intro</a></li>
-            <li><a href="CSS-boxModel.html" target="myFrame">CSS intro</a></li>
-            <li><a href="CSS-boxModel.html" target="myFrame">CSS intro</a></li>
-            <li><a href="CSS-boxModel.html" target="myFrame">CSS intro</a></li>
-            <li><a href="CSS-boxModel.html" target="myFrame">CSS intro</a></li>
-            <li><a href="CSS-boxModel.html" target="myFrame">CSS intro</a></li>
-            <li><a href="CSS-boxModel.html" target="myFrame">CSS intro</a></li>
-            <li><a href="CSS-boxModel.html" target="myFrame">CSS intro</a></li>
-            <li><a href="CSS-boxModel.html" target="myFrame">CSS intro</a></li>
-            <li><a href="CSS-boxModel.html" target="myFrame">CSS intro</a></li>
-        </ul>
-    </div>
 
 
 
-    <div class="frame">
-        <iframe frameborder="5px" name="myFrame"></iframe>
-    </div>
-
+    <!-- <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is Dev
+                and I am a Web Developer
+            </div>
+            <div class="rightSection">
+                <img src="developer.png" alt="Developer Image">
+            </div>
+        </section>
+    </main> -->
 </body>
+
 </html>
