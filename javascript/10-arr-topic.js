@@ -6,12 +6,12 @@
 
 // const newArr=myArr;
 // //newArr will have a shallow copy 
-// //myArr and newArr will share the sam reference
+// //myArr and newArr will share the same reference
 // newArr[0]=10;
 // console.log(newArr[0])
 // const myHeors = ["shaktiman", "naagraj",1 , 2,true]
-const myArr = new Array(1, 2, 3, 4)
-console.log(myArr[3]);
+// const myArr = new Array(1, 2, 3, 4)
+// console.log(myArr[3]);
 // Array methods
 // const myArr = [4, 54, 50, 65, 48, 75]
 // myArr.push(6)
@@ -20,21 +20,22 @@ console.log(myArr[3]);
 
 // myArr.unshift(9)  //=add element at the 0th index and shift rest to right/ not optimized
 // myArr.shift()    //=remove oth index and shift left
-console.log(myArr);
-console.log(myArr.includes(4));
-console.log(myArr.indexOf(65));
+// console.log(myArr);
+// console.log(myArr.includes(4));
+// console.log(myArr.indexOf(65));
 
-const newArr = myArr.join() //=Converts the array in String
-console.log(newArr);
+// const newArr = myArr.join() //=Converts the array in String
+// console.log(newArr);
 
 
 let myarr=[1,1,2,3,4,5,6]
 removed2 =myarr.splice(5,6);
 console.log(myarr);
+
 console.log(removed2);
-  ritika=myarr.splice(2)
- console.log(myarr);
- console.log(ritika);
+//   ritika=myarr.splice(2)
+//  console.log(myarr);
+//  console.log(ritika);
  
 
 
@@ -50,12 +51,12 @@ console.log(removed2);
 // months.splice(1,0,'feb');
 // console.log(months);
 
-let arr3=[1,2,3]
-let arr4=[4,5,6]
-arr3.push(arr4)
-console.log(arr3);
- suri= arr3.concat(arr4)
-console.log(suri);
+// let arr3=[1,2,3]
+// let arr4=[4,5,6]
+// arr3.push(arr4)
+// console.log(arr3);
+//  suri= arr3.concat(arr4)
+// console.log(suri);
 
 //spread operator 
 
@@ -68,8 +69,8 @@ console.log(suri);
 //arr[3][2]=6,
 // arr=[4,5,6,[1,2,3,[7,8,9]]]
 
-let rt =[1,2,3,"fruit",5]
-console.log(Array.isArray(rt));
+// let rt =[1,2,3,"fruit",5]
+// console.log(Array.isArray(rt));
 
 // var str="developer hi" 
 // console.log(Array.from(str)); // character array 

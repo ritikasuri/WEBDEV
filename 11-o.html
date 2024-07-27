@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>object in js</title>
+  </head>
+  <body>
+    <script>
+              let person ={
+          name: "peter",
+          age: 28,
+          gender:"female",
+        displayName :function(){
+          alert(this.name)
+        }
+      };
+      for(let i in person){
+         document.write ( person[i]+"br");
+      }
+
+      person.country="united states",
+      document.write(person.country+"br");
+      person["email"] = "ritikasuri222@gmail.com"
+
+      //delete property
+      delete person.age;
+      document.write(person.age+"br");
+
+      //CALL THE METHOD OF AN OBJECT
+       person.displayName();
+      document.write()
+      person["displayName"]();
+   //while loop in js 
+    //   let i=1;
+    //   while(i<=5){
+    //     document.write("<p> the number is "+i+"</p>");
+    //     i++;
+
+    //   }
+
+    //   let i=6;
+    //   do{
+    //     document.write("<p> the number is "+i+"</p>");
+    //     i++;
+    //   }
+    //   while(i<=5);
+
+       //for loop
+       for (let i=1; i<=5; i++){
+        document.write("<p> the number is "+i+"</p>");
+//break statement 
+break;
+       }
+    </script>
+  </body>
+</html>

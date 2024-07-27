@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript select topmost elements</title>
+<style>
+    .heighlight{
+        background-color: aqua;
+    }
+</style>
+</head>
+<body>
+    <p id="mark">This is a paragraph of text.</p>
+<p> this is another paragraph of text.</p>
+
+<p  >This is para</p>
+<div class="block test"> this is anothe PARA</div>
+<p>this is another one para</p>
+
+ <ul>
+    <li>hello</li>
+    <li>my</li>
+    <li>name is </li>
+    <li class="tick">ritika</li>
+    </ul>
+
+    <div id="info" class="disabled"> Something is very Important</div>
+    <script> 
+
+
+//         print lang attribute value of the html element
+// document.write(document.documentElement.getAttribute("lang")); 
+// document.write("<br>");
+// set background color of body element
+// document.body.style.background="yellow";
+// print tag name of the head elemts first child
+// document.write(document.head.firstelementchild.node/name); //peints:meta
+
+//javaScript Select an Element by its Id Attribute
+
+//selecting element with id mark
+// let match=document.getElementById("mark");
+
+// //Highlighting elements background
+// match.style.background="red";
+
+// sleCTING ELEMENT WITH THE CLASS TEST
+// let matches =document.getElementByIdClassName("test");
+
+//Displaying the selected element cout
+// document.write("Number of Selected elements:"+matches.length);
+//Applying italic style to last element in selection
+// matches[matches.length-1].style.fontStyle="italic";
+
+//Highlighting each element background through loop
+// for(let elem in matches){
+//     matches [elem].style.background="green";
+// }4
+
+//SELECTING ALL PARAGRAPH ELEMENTS
+// alert('hello')
+// let matches =document.getElementsByTagName("p");
+// alert('hello2')
+//printing the number of selected paragraphs
+// document.write("number of selected elements:"+matches.length);
+
+//highlighting each p[aragraphs background through loop
+// for (let elem in matches){
+//     matches[elem].style.background="green";
+// }
+
+//selecting all li elements
+// let matches=document.querySelectorAll("ul,li");
+//printing the number of selected li elements
+// document.write("Number of selected elements:"+matches.length+"<hr>")
+//  for (let elem of matches){
+//     document.write(elem.innerHTML+"<br>");
+
+//  }
+ //applying line through style to first li element with class tick
+//  matches =document.querySelectorAll("ul li.tick");
+//  matches[0].style.textDecoration ="linethrough";
+
+ // SELECTING ELEMENT
+//  let elem = document.getElementById("info");
+//  elem.className ="note"; //Add or replace all classes with note class
+//  elem.className="heighlight"; //Add a new class highlight
+
+
+let elem = document.getElementById("info");
+elem.classList.add("hide"); //Add a new class
+elem.classList.add("note", "Highlight"); // add multiple classes
+elem.classList.remove("hide"); //remove a class
+elem.classList.remove("disabled","note"); // remove multiple classes
+elem.classList.toggle("visible"); //if class exists remove it,if not add it
+
+//determine if class exists
+if(elem.classList.contains(Highlight)){
+    alert("the specified class exist on the element")
+}
+</script>
+</body>
+</html>

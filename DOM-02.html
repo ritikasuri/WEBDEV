@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+</head>
+<body>
+    <!-- <button  type="button" id="myBtn" >Click Me</button>
+     <h2>javaScript Handling The Contextmenu Event</h2> -->
+    <!-- <button type="button" oncontextmenu="alert('you haveright-clicked a button');"> Right Click On Me</button>
+    <a href="#" oncontextmenu="alert('you haveright-clicked a link!');"> Right Click On Me</a>
+<br>
+    <button type="button" oncmouseover="alert('you have right clicked on button!');">right click on me </button>
+    <a href="#" onmouseover="alert('you have right clicked on button!');"> right click on me </a>
+
+    <br>
+    <button type="button" onmouseout="alert('you have right clicked on button!');">right click on me </button>
+    <a href="#" onmouseout="alert('you have right clicked on button!');"> right click on me </a>
+
+    <h3>javaScript Handling the keydown event</h3>
+    <input type="text" onkeydown="alert('You have pressed a key inside text input!')">
+    <hr>
+    <textarea cols="30"onkeydown="alert('you have pressed a key inside textarea!')"></textarea>
+    <p><strong>Note:</strong> Try to enter some text inside input box and textarea.</p>
+
+    <h4>5.javaScript Handling The Focus Event</h4>
+ <input type="text" onfocus="highlightinput(this)">
+ <button type="button">button</button>
+
+ <h4>javascript handling the change event</h4>
+ <select onchange="alert('you have changed the selection !');">
+ <option>select</option>
+ <option>male</option>
+ <option>female</option>
+ </select>
+ <p><strong Note:> Select any optiopn in select box to see how it works</strong></p>
+
+ <h4>javaScript assigning multiple event handlers on a single event</h4> --> 
+    <!-- <button id="myBtn">Click Me</button>
+
+    <h3>6. javaScript assinging multiple event listeners on a single event</h3>
+    <button id="mybtn">click me</button>
+
+    <h3>7. </h3>
+    <button id="myBtn">Click Me</button> -->
+    <!-- <script>
+        function sayhello(){
+            alert('Hello World');
+        }
+        document.getElementById("myBtn").onlick = sayhello;
+
+    </script>
+    -->
+ 
+    <!-- javaScript Handling The Focus Event</h4> -->
+ <!-- <script>
+    function highlightinput(elm){
+        elm.style.background ="yellow";
+    
+ }
+</script> -->
+
+<!-- javaScript assigning multiple event handlers on a single event -->
+ <!-- <script> -->
+    <!-- //defining custom functions
+    function firstfunction(){
+        alert("The first function executed successfuuly!");
+    }
+    function secondfunction(){
+        alertr("the second function executed ")
+    }
+
+    //selecting button element
+    let btn=document.getElementById("myBtn");
+    // assigning evenmt handelers to the button
+    btn.onclick=firstfunction;
+    btn.onclick =secondfunction; -->
+
+    <!-- // javaScript assinging multiple event listeners on a single event -->
+   <!-- <script> -->
+    <!-- // Defining custom functions
+    function firstFunction() {
+        alert("The first function executed successfully!");
+    }
+     
+    function secondFunction() {
+        alert("The second function executed successfully");
+    }
+     
+    // Selecting button element
+    let -->
+    
+<!-- //  </script> -->
+ <button id="mybtn"> click me</button>
+<script>
+    let btn = document.getElementById("mybtn");
+
+    function sayHello(){
+        alert('hi,hoW ARE YOU?');
+
+    }
+    function setHoverColor(){
+btn.style.background="yellow";
+    }
+    function setNormalColor(){
+        btn.style.background="";
+    }
+     btn.addEventListener("click",sayHello);
+     btn.addEventListener("mouseover",setHoverColor);
+     btn.addEventListener("mouseout",setNormalColor);
+
+</script>
+ 
+</body>
+</html>

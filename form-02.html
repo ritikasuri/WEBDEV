@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .error{
+            color:blueviolet
+        
+        }
+        .form-group{
+            font-size:12px;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form id="Registration Form" onsubmit="return validateForm()">
+        <div class="form-group">
+            <label for="UserName">UserName:</label>
+            <input type="text" id="username" name="username" required>
+            <span id="usernameError" class="error"></span>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+            <span id="emailError" class="error"></span>
+        </div>
+        <div class="form-group">
+            <label for="Password">password:</label>
+            <input type="text" id="password" name="password" required>
+            <span id="passwordError" class="error"></span>
+
+        </div>
+        <div class="form-group">
+            <label for="confirmpassword">confirmpassword:</label>
+            <input type="text" id="confirmpassword" name="username" required>
+            <span id="usernameError" class="error"></span>
+        </div>
+        
+            <button type="submit">Register</button>
+  
+    </form>
+    <script>
+        function validateForm(){
+
+            // clear previous error message
+            document.getElementById("usernameError").textContent="";
+            document.getElementById("emailerror").textContent="";
+            document.getElementById("passwordError").textContent="";
+            document.getElementById("confirmPasswordError").textContent="";
+        }
+        //get form values
+         var username =document.getElementById("username").value;
+         var email =document.getElementById("email").value;
+         var password =document.getElementById("password").value;
+         var confirmPassword =document.getElementById("confirmPassword").value;
+
+         var valid =true;
+
+         //validate username
+         if (username.length <3){
+            document.getElementById("usernameError").textContent="user must be a least 3 character long.";
+        valid=false;
+        }
+         //validate password
+         if(password.length<6){
+            document.getElementById("passwordError").textContent="Password must be at least 6 characters long.";
+            valid =false;
+
+         }
+
+    </script>
+</body>
+
+</html>

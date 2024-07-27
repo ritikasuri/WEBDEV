@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency Booking Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #formContainer {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        #submitButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        #message {
+            margin-top: 20px;
+            font-size: 18px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="formContainer">
+        <h1>Travel Agency Booking Form</h1>
+        <form id="bookingForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="destination">Destination:</label>
+            <select id="destination" required>
+                <option value="">Select a destination</option>
+                <option value="Paris">Paris</option>
+                <option value="New York">New York</option>
+                <option value="Tokyo">Tokyo</option>
+                <option value="Sydney">Sydney</option>
+            </select>
+
+            <label for="departureDate">Departure Date:</label>
+            <input type="date" id="departureDate" required>
+
+            <label for="returnDate">Return Date:</label>
+            <input type="date" id="returnDate" >
+
+            <button type="submit" id="submitButton">Submit</button>
+        </form>
+        <p id="message"></p>
+    </div>
+
+    <script>
+        // Select form and message elements
+        const bookingForm = document.getElementById('bookingForm');
+        const message = document.getElementById('message');
+
+        // Add event listener for form submission
+        bookingForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form from submitting the default way
+
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const destination = document.getElementById('destination').value;
+            const departureDate = document.getElementById('departureDate').value;
+            const returnDate = document.getElementById('returnDate').value;
+
+            // Simple validation
+            if (!name || !email || !destination || !departureDate || !returnDate) {
+                message.textContent = 'Please fill out all fields.';
+                message.style.color = 'red';
+            } else {
+                message.textContent = 'Thank you, ${name}! Your trip to ${destination} is booked.';
+                message.style.color = 'green';
+            }
+
+            // Clear the form
+            bookingForm.reset();
+        });
+    </script>
+</body>
+</html>

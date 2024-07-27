@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+    
+  </head>
+  <body>
+    <h1>
+      Create 5 li item in html. changer the text inside list items. make list
+      style square
+    </h1>
+    <div>
+      <ul>
+        <li class="item">fruits</li>
+        <li class="item">orange</li>
+        <li class="item">Apple</li>
+        <li class="item">Grapes</li>
+        <li class="item">Lichi</li>
+      </ul>
+    </div>
+    <script>
+    document.querySelectorAll(".item").forEach((item_li )=>{
+        item_li.setAttribute("style","color:green; background-color:yellow;list-style-type:square;")
+      
+        // item_li.setAttribute("style" ,"list-style-type:sqaure")
+        // li.style.listStyleType = "sqaure"
+      })
+    </script>
+  </body>
+</html>

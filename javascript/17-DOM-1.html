@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom learning</title>
+    <style>
+      .bg-black {
+        background-color: darkslategray;
+        color: aliceblue;
+      }
+    </style>
+  </head>
+  <body class="bg-black">
+    <div>
+      <h1 id="first">This Is First</h1>
+      <h1 id="title" class="heading">
+        This is a heading <span style="display: none">This is hidden</span>
+      </h1>
+      <h3>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto officiis
+        architecto reiciendis, accusamus laudantium doloremque voluptatem
+        impedit similique itaque asperiores nostrum voluptatibus consequatur
+        sintoptio.
+      </h3>
+      <p>this is para</p>
+
+      <input type="text"name="ritu" id="">
+      <input type="password" name="ritika" id="">
+      <ul>
+        <li class="item">i</li>
+        <li class="item">o</li>
+        <li class="item">lll</li>
+        <li class="item">hhhh</li>
+      </ul>
+    </div>
+
+    <script>
+
+           console.log(document.querySelectorAll('.item'));
+           // document.querySelectorAll(".item").forEach((item_li )=>{
+           //       console.log(item_li);
+           //   })
+
+
+//fetch input
+console.log(document.getElementsByTagName('input[type="password"]'));
+
+           document.querySelectorAll(".item" ).forEach((item_li )=>{
+             item_li.setAttribute("style","color:green; background-color:yellow;");
+             item_li.style.padding="70px;"
+             // console.log(item_li);
+
+             })
+
+           //accessing
+           // console.log(document.getElementById("title"));
+           // const t1 = document.getElementById("title").innerHTML;
+           // const t2 = document.getElementById("title").innerText;
+           //accessing
+           // collec1 = document.getElementsByClassName("item");
+           // collec1[1].innerText = "new name";
+           // console.log(collec1[1]);
+           // collec3 = document.getElementsByClassName("item");
+           // collec1[3].innerText = "kkk name";
+           // console.log(collec1[3]);
+           // //changing
+
+           // t2.innerText = "this is new heading";
+           // console.log(t1);
+           // console.log(t2);
+
+           // how to add style
+           const f1 = document.getElementById("first");
+           f1.setAttribute("style", "color:red; font-style:italic; font-size:50px;");
+      f1.style.marginLeft='50vw';
+      f1.style.marginRight='50vw';
+      const allh2=document.querySelector("#first");
+             console.log(allh2);
+             const pass=document.querySelector('input[type="password"]');
+             console.log(pass);
+             const allchild=document.querySelectorAll('ul')
+             console.log(allchild);
+          const childList = document.querySelectorAll('li');
+    </script>
+  </body>
+</html>
